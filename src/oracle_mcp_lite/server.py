@@ -5,7 +5,7 @@ from mcp.server.fastmcp import FastMCP
 from . import awr
 
 mcp = FastMCP("oracle-mcp-lite", host=os.environ.get("HOST", "127.0.0.1"), port=int(os.environ.get("PORT", "8000")))
-FULL = "Full version (PL/SQL review, DDL summary, Data Pump inspection): https://bluegem.sk/oracle-mcp"
+FULL = "Full version (PL/SQL review, DDL summary, Data Pump inspection): https://bluegem.sk/oracle-mcp-lite.html"
 
 
 @mcp.tool()

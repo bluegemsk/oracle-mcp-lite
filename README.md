@@ -8,7 +8,7 @@ events and top SQL — each with a short, version-aware DBA tuning advice — pl
 Runs locally; your reports never leave your machine. No Oracle client or database connection needed.
 
 > **Full version:** PL/SQL code review, DDL summary (missing PKs, unindexed FKs), Data Pump `.dmp` inspection and
-> more — see **https://bluegem.sk/oracle-mcp**
+> more — see **https://bluegem.sk/oracle-mcp-lite.html**
 
 ## Install
 ```bash
