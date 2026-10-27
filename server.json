@@ -3,9 +3,9 @@
   "name": "io.github.bluegemsk/oracle-mcp-lite",
   "description": "Offline Oracle AWR/ASH report analyzer with DBA tuning advice and a top-3 tuning summary.",
   "repository": {"url": "https://github.com/bluegemsk/oracle-mcp-lite", "source": "github"},
-  "version": "0.1.0",
+  "version": "0.1.1",
   "packages": [
-    {"registryType": "pypi", "identifier": "oracle-mcp-lite", "version": "0.1.0",
+    {"registryType": "pypi", "identifier": "oracle-mcp-lite", "version": "0.1.1",
      "transport": {"type": "stdio"}}
   ]
 }

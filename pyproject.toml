@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "oracle-mcp-lite"
-version = "0.1.0"
+version = "0.1.1"
 description = "Free MCP server that analyzes Oracle AWR/ASH reports offline and gives DBA tuning advice"
 readme = "README.md"
 requires-python = ">=3.10"
