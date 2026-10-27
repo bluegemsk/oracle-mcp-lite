@@ -1,0 +1,29 @@
+<html><head><title>ASH RAC Report - From 01-Jan-23 00:00:00 To 01-Jan-23 01:00:00</title></head><body><h1>ASH Report For SHOPDB/SHOP1</h1>
+<table summary="Database Summary"><tr><th>Database</th><th>Number of Instances</th><th>Number of Hosts</th></tr><tr><th>Id</th><th>Name</th><th>RAC</th><th>In Report</th><th>Total</th><th>In Report</th><th>Total</th></tr>
+<tr><td>42</td><td>SHOPDB</td><td>YES</td><td>2</td><td>2</td><td>2</td><td>2</td></tr>
+</table>
+<table summary="This table displays information about the ASH report"><tr><th></th><th>Sample Time</th><th>Data Source</th></tr>
+<tr><td>Analysis Begin Time:</td><td>01-Jan-23 00:00:00</td><td>DBA_HIST</td></tr>
+<tr><td>Analysis End Time:</td><td>01-Jan-23 01:00:00</td><td>DBA_HIST</td></tr>
+<tr><td>Elapsed Time:</td><td>60.0 (mins)</td><td></td></tr>
+<tr><td>Sample Count:</td><td>3,600</td><td></td></tr>
+<tr><td>Average Active Sessions:</td><td>6.00</td><td></td></tr>
+</table>
+<table summary="Database Instances Included In Report"><tr><th>I#</th><th>Instance</th><th>% Activity</th><th>Avg Active Sessions</th><th>Host</th><th>Release</th><th>CPUs</th></tr>
+<tr><td>1</td><td>SHOP1</td><td>70.00</td><td>4.20</td><td>node1</td><td>19.0.0.0.0</td><td>16</td></tr>
+<tr><td>2</td><td>SHOP2</td><td>30.00</td><td>1.80</td><td>node2</td><td>19.0.0.0.0</td><td>16</td></tr>
+</table>
+<table summary="This table displays the top user events"><tr><th>Event</th><th>Event Class</th><th>% Event</th><th>Avg Active Sessions</th></tr>
+<tr><td>CPU + Wait for CPU</td><td>CPU</td><td>55.00</td><td>3.30</td></tr>
+<tr><td>gc cr block busy</td><td>Cluster</td><td>25.00</td><td>1.50</td></tr>
+<tr><td>enq: TX - row lock contention</td><td>Application</td><td>8.00</td><td>0.48</td></tr>
+</table>
+<table summary="Top Background Events"><tr><th>Event</th><th>Event Class</th><th>% Activity</th><th>Avg Active Sessions</th></tr>
+<tr><td>log file parallel write</td><td>System I/O</td><td>6.00</td><td>0.36</td></tr>
+</table>
+<table summary="Top SQL with Top Events"><tr><th>SQL ID</th><th>FullPlanhash</th><th>Planhash</th><th>Sampled # of Executions</th><th>% Activity</th><th>Event</th><th>% Event</th><th>Top Row Source</th><th>% RwSrc</th></tr>
+<tr><td>cccccccccccc1</td><td>1</td><td>1</td><td>10</td><td>30.00</td><td>CPU + Wait for CPU</td><td>20.00</td><td>TABLE ACCESS - FULL</td><td>15.00</td></tr>
+<tr><td>cccccccccccc1</td><td>1</td><td>1</td><td>10</td><td>30.00</td><td>gc cr block busy</td><td>10.00</td><td>x</td><td>5.00</td></tr>
+<tr><td>cccccccccccc2</td><td>2</td><td>2</td><td>5</td><td>8.00</td><td>enq: TX - row lock contention</td><td>8.00</td><td>x</td><td>8.00</td></tr>
+</table>
+</body></html>

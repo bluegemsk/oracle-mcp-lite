@@ -1,0 +1,18 @@
+<html><body><h1>WORKLOAD REPOSITORY report for</h1>
+<table summary="This table displays database instance information"><tr><th>DB Name</th><th>DB Id</th><th>Instance</th><th>Inst num</th><th>Release</th><th>RAC</th></tr>
+<tr><td>PRODDB</td><td>123456</td><td>proddb1</td><td>1</td><td>19.0.0.0.0</td><td>NO</td></tr></table>
+<table summary="This table displays snapshot information"><tr><th></th><th>Snap Id</th><th>Snap Time</th><th>Sessions</th></tr>
+<tr><td>Elapsed:</td><td></td><td>60.02 (mins)</td><td></td></tr><tr><td>DB Time:</td><td></td><td>240.10 (mins)</td><td></td></tr></table>
+<h3>Load Profile</h3>
+<table summary="This table displays load profile"><tr><th></th><th>Per Second</th><th>Per Transaction</th></tr>
+<tr><td>DB Time(s):</td><td>4.0</td><td>0.1</td></tr><tr><td>Hard parses (SQL):</td><td>250.3</td><td>0.2</td></tr><tr><td>Transactions:</td><td>1,200.5</td><td></td></tr></table>
+<table summary="This table displays top 10 wait events by total wait time"><tr><th>Event</th><th>Waits</th><th>Total Wait Time (sec)</th><th>Avg Wait</th><th>% DB time</th><th>Wait Class</th></tr>
+<tr><td>DB CPU</td><td></td><td>4,320</td><td></td><td>30.0</td><td></td></tr>
+<tr><td>log file sync</td><td>2,500,000</td><td>3,600</td><td>1.44ms</td><td>25.0</td><td>Commit</td></tr>
+<tr><td>db file sequential read</td><td>9.5M</td><td>2,880</td><td>303.16us</td><td>20.0</td><td>User I/O</td></tr>
+<tr><td>enq: TX - row lock contention</td><td>1,000</td><td>720</td><td>720ms</td><td>5.0</td><td>Application</td></tr></table>
+<h3>SQL ordered by Elapsed Time</h3>
+<table summary="This table displays top SQL by elapsed time"><tr><th>Elapsed Time (s)</th><th>Executions</th><th>Elapsed Time per Exec (s)</th><th>%Total</th><th>%CPU</th><th>%IO</th><th>SQL Id</th><th>SQL Module</th><th>SQL Text</th></tr>
+<tr><td>5,000.12</td><td>120</td><td>41.67</td><td>34.7</td><td>40.0</td><td>55.0</td><td>7h35uxf5uhmm1</td><td>JDBC Thin Client</td><td>SELECT * FROM ORDERS O WHERE ...</td></tr>
+<tr><td>900.00</td><td>1,500,000</td><td>0.00</td><td>6.2</td><td>90.0</td><td>1.0</td><td>a1b2c3d4e5f6g</td><td>batch</td><td>INSERT INTO AUDIT_LOG VALUES (:1, :2)</td></tr></table>
+</body></html>

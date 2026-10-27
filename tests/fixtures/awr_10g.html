@@ -1,0 +1,27 @@
+<HTML><HEAD><TITLE>AWR Report</TITLE></HEAD><BODY class="awr"><h1 class="awr">WORKLOAD REPOSITORY report for</h1>
+<table><tr><th>DB Name</th><th>DB Id</th><th>Instance</th><th>Inst num</th><th>Release</th><th>RAC</th><th>Host</th></tr>
+<tr><td>SHOPDB</td><td>123</td><td>SHOPDB</td><td>1</td><td>10.2.0.4.0</td><td>NO</td><td>dbhost1</td></tr>
+</table>
+<table><tr><th></th><th>Snap Id</th><th>Snap Time</th><th>Sessions</th><th>Cursors/Session</th></tr>
+<tr><td>Begin Snap:</td><td>100</td><td>01-Jan-22 00:00:00</td><td>50</td><td>10</td></tr>
+<tr><td>End Snap:</td><td>110</td><td>01-Jan-22 10:00:00</td><td>60</td><td>11</td></tr>
+<tr><td>Elapsed:</td><td></td><td>600.00 (mins)</td><td></td><td></td></tr>
+<tr><td>DB Time:</td><td></td><td>1,200.00 (mins)</td><td></td><td></td></tr>
+</table>
+<h2 class="awr">Report Summary</h2>
+<p>Load Profile</p><table><tr><th></th><th>Per Second</th><th>Per Transaction</th></tr>
+<tr><td>Redo size:</td><td>1,000.00</td><td>50.00</td></tr>
+<tr><td>Logons:</td><td>8.50</td><td>0.10</td></tr>
+<tr><td>Hard parses:</td><td>12.00</td><td>0.01</td></tr>
+</table>
+<p>Top 5 Timed Events</p><table><tr><th>Event</th><th>Waits</th><th>Time(s)</th><th>Avg Wait(ms)</th><th>% Total Call Time</th><th>Wait Class</th></tr>
+<tr><td>ARCH wait on SENDREQ</td><td>1,000</td><td>30,000</td><td>30</td><td>41.7</td><td>Network</td></tr>
+<tr><td>CPU time</td><td></td><td>20,000</td><td></td><td>27.8</td><td></td></tr>
+<tr><td>db file scattered read</td><td>9,000,000</td><td>15,000</td><td>2</td><td>20.8</td><td>User I/O</td></tr>
+<tr><td>log file sync</td><td>500,000</td><td>3,000</td><td>6</td><td>4.2</td><td>Commit</td></tr>
+</table>
+<h3 class="awr">SQL ordered by Elapsed Time</h3><table><tr><th>Elapsed Time (s)</th><th>CPU Time (s)</th><th>Executions</th><th>Elap per Exec (s)</th><th>% Total DB Time</th><th>SQL Id</th><th>SQL Module</th><th>SQL Text</th></tr>
+<tr><td>18,000</td><td>9,000</td><td>10</td><td>1800.0</td><td>25.0</td><td>aaaaaaaaaaaa1</td><td>batch.exe</td><td>select ... from orders</td></tr>
+<tr><td>3,600</td><td>1,000</td><td>200,000</td><td>0.02</td><td>5.0</td><td>aaaaaaaaaaaa2</td><td>app</td><td>update stock</td></tr>
+</table>
+</BODY></HTML>

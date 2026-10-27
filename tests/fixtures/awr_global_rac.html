@@ -1,0 +1,22 @@
+<html><head><title>AWR RAC Report for DB: SHOPDB, Snaps: 1-5</title></head><body><h1>WORKLOAD REPOSITORY REPORT (RAC)</h1>
+<table summary="Database Summary"><tr><th>Database</th><th>Snapshot Ids</th><th>Number of Instances</th><th>Number of Hosts</th><th>Report Total (minutes)</th></tr><tr><th>Id</th><th>Name</th><th>Unique Name</th><th>Role</th><th>Edition</th><th>RAC</th><th>CDB</th><th>Block Size</th><th>Begin</th><th>End</th></tr>
+<tr><td>42</td><td>SHOPDB</td><td>shopdb</td><td>PRIMARY</td><td>EE</td><td>YES</td><td>NO</td><td>8192</td><td>1</td><td>5</td></tr>
+</table>
+<table summary="Database Instances Included In Report"><tr><th>I#</th><th>Instance</th><th>Host</th><th>Startup</th><th>Begin Snap Time</th><th>End Snap Time</th><th>Release</th><th>Elapsed Time(min)</th><th>DB time(min)</th><th>Up Time(hrs)</th></tr>
+<tr><td>1</td><td>SHOP1</td><td>node1</td><td>x</td><td>x</td><td>x</td><td>19.0.0.0.0</td><td>240.00</td><td>900.00</td><td>100</td></tr>
+<tr><td>2</td><td>SHOP2</td><td>node2</td><td>x</td><td>x</td><td>x</td><td>19.0.0.0.0</td><td>240.00</td><td>300.00</td><td>100</td></tr>
+</table>
+<table summary="Top Timed Events. Instance '*' - cluster wide summary"><tr><th></th><th>Wait</th><th>Event</th><th>Wait Time</th><th>Summary Avg Wait Time</th></tr><tr><th>I#</th><th>Class</th><th>Event</th><th>Waits</th><th>%Timeouts</th><th>Total(s)</th><th>Avg Wait</th><th>%DB time</th><th>Avg</th><th>Min</th></tr>
+<tr><td>*</td><td></td><td>DB CPU</td><td></td><td></td><td>36,000.00</td><td></td><td>50.00</td><td></td><td></td></tr>
+<tr><td></td><td>Cluster</td><td>gc cr block busy</td><td>1,000,000</td><td>0.00</td><td>14,400.00</td><td>14ms</td><td>20.00</td><td></td><td></td></tr>
+<tr><td></td><td>Other</td><td>gcs log flush sync</td><td>2,000,000</td><td>0.00</td><td>7,200.00</td><td>3ms</td><td>10.00</td><td></td><td></td></tr>
+<tr><td>1</td><td></td><td>DB CPU</td><td></td><td></td><td>30,000.00</td><td></td><td>55.56</td><td></td><td></td></tr>
+<tr><td></td><td>Cluster</td><td>gc cr block busy</td><td>500,000</td><td>0.00</td><td>6,000.00</td><td>12ms</td><td>11.11</td><td></td><td></td></tr>
+<tr><td>2</td><td>Cluster</td><td>gc cr block busy</td><td>500,000</td><td>0.00</td><td>8,400.00</td><td>16ms</td><td>46.67</td><td></td><td></td></tr>
+<tr><td></td><td></td><td>DB CPU</td><td></td><td></td><td>6,000.00</td><td></td><td>33.33</td><td></td><td></td></tr>
+</table>
+<table summary="SQL ordered by Elapsed Time (Global)"><tr><th></th><th>Total</th><th>Per Execution</th><th>Percentage of Total</th><th></th></tr><tr><th>SQL Id</th><th>Elapsed (s)</th><th>CPU (s)</th><th>IOWait (s)</th><th>Gets</th><th>Reads</th><th>Rows</th><th>Cluster (s)</th><th>Execs</th><th>Elapsed (s)</th></tr>
+<tr><td>bbbbbbbbbbbb1</td><td>21,600.00</td><td>3,000.00</td><td>0.00</td><td>1</td><td>1</td><td>1</td><td>15,000.00</td><td>10</td><td>2,160.00</td></tr>
+<tr><td>bbbbbbbbbbbb2</td><td>7,200.00</td><td>7,000.00</td><td>0.00</td><td>1</td><td>1</td><td>1</td><td>0.00</td><td>100</td><td>72.00</td></tr>
+</table>
+</body></html>

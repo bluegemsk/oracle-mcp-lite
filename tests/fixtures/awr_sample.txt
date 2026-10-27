@@ -1,0 +1,33 @@
+WORKLOAD REPOSITORY report for
+
+DB Name         DB Id    Instance     Inst Num Startup Time    Release     RAC
+------------ ----------- ------------ -------- --------------- ----------- ---
+PRODDB         123456     proddb1             1 01-Oct-26 10:00 19.0.0.0.0  NO
+
+              Snap Id      Snap Time      Sessions Curs/Sess
+            --------- ------------------- -------- ---------
+   Elapsed:               60.02 (mins)
+   DB Time:              240.10 (mins)
+
+Load Profile                    Per Second   Per Transaction
+~~~~~~~~~~~~~~~            ---------------   ---------------
+             DB Time(s):               4.0               0.1
+      Hard parses (SQL):             250.3               0.2
+           Transactions:           1,200.5
+
+Top 10 Foreground Events by Total Wait Time
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Event                          Waits  Total Wait Time (sec)  Avg(ms)  % DB time  Wait Class
+------------------------------ ------ ---------------------- -------- ---------- ----------
+log file sync                  2,500,000   3,600   1.44ms   25.0  Commit
+db file sequential read        9.5M        2,880   0.30ms   20.0  User I/O
+
+SQL ordered by Elapsed Time
+   Elapsed                  Elapsed Time
+   Time (s)    Executions  per Exec (s)  %Total   %CPU    %IO    SQL Id
+---------------- -------------- ------------- ------ ------ ------ -------------
+         5,000.1            120         41.67   34.7   40.0   55.0 7h35uxf5uhmm1
+Module: JDBC Thin Client
+SELECT * FROM ORDERS O WHERE ...
+
+Instance Efficiency Percentages
